@@ -36,7 +36,7 @@ if option == "واقعة عمل":
         date = st.date_input("التاريخ")
         location = st.text_input("المكان")
     with col2:
-        time = st.time_input("الوقت")
+        time = st.text_input("الوقت (مثلاً 01:13)", value=datetime.now().strftime("%H:%M"))
         reported_by = st.text_input("المبلّغ")
     
     involved = st.text_area("الأطراف المعنية")
